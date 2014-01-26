@@ -26,4 +26,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)swap:(id)sender {
+    
+    static int colorIndex = 1;
+    
+    colorIndex++;
+    
+    if (colorIndex == 2 ){
+        self.myLabel.textColor = [UIColor redColor];
+       
+       
+    }
+    
+    
+    if (colorIndex == 3){
+        self.myLabel.textColor = [UIColor greenColor];
+        colorIndex -= 2;
+        
+
+    }
+}
+                    
 @end
+                    
